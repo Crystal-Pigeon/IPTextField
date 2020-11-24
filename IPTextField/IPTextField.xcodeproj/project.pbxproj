@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		DF94CD8E256D19F500D779E2 /* IPTextField.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF94CD84256D19F500D779E2 /* IPTextField.framework */; };
-		DF94CD93256D19F500D779E2 /* IPTextFieldTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF94CD92256D19F500D779E2 /* IPTextFieldTests.swift */; };
+		DF94CD93256D19F500D779E2 /* IPAddressTextFieldinsertTextTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF94CD92256D19F500D779E2 /* IPAddressTextFieldinsertTextTests.swift */; };
 		DF94CD95256D19F500D779E2 /* IPTextField.h in Headers */ = {isa = PBXBuildFile; fileRef = DF94CD87256D19F500D779E2 /* IPTextField.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DF94CDBF256D1EB000D779E2 /* UnderlinedTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF94CDBE256D1EB000D779E2 /* UnderlinedTextField.swift */; };
 		DF94CDC3256D1ECF00D779E2 /* IPTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF94CDC2256D1ECF00D779E2 /* IPTextField.swift */; };
@@ -16,6 +16,9 @@
 		DF94CDCB256D1F0600D779E2 /* IPTextField+UnderlinedTextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF94CDCA256D1F0600D779E2 /* IPTextField+UnderlinedTextFieldDelegate.swift */; };
 		DF94CDCF256D1F1700D779E2 /* IPTextField+ UITextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF94CDCE256D1F1700D779E2 /* IPTextField+ UITextFieldDelegate.swift */; };
 		DF94CDD3256D1F3300D779E2 /* IPError.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF94CDD2256D1F3300D779E2 /* IPError.swift */; };
+		DF94CDDB256D207000D779E2 /* IPAddressTextFieldGetTextTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF94CDDA256D207000D779E2 /* IPAddressTextFieldGetTextTests.swift */; };
+		DF94CDDF256D209500D779E2 /* IPAddresTextFieldClearTextTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF94CDDE256D209500D779E2 /* IPAddresTextFieldClearTextTests.swift */; };
+		DF94CDE3256D20B600D779E2 /* IPAddressTextFieldCheckTextTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF94CDE2256D20B600D779E2 /* IPAddressTextFieldCheckTextTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,7 +36,7 @@
 		DF94CD87256D19F500D779E2 /* IPTextField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IPTextField.h; sourceTree = "<group>"; };
 		DF94CD88256D19F500D779E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DF94CD8D256D19F500D779E2 /* IPTextFieldTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IPTextFieldTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		DF94CD92256D19F500D779E2 /* IPTextFieldTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IPTextFieldTests.swift; sourceTree = "<group>"; };
+		DF94CD92256D19F500D779E2 /* IPAddressTextFieldinsertTextTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IPAddressTextFieldinsertTextTests.swift; sourceTree = "<group>"; };
 		DF94CD94256D19F500D779E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DF94CDBE256D1EB000D779E2 /* UnderlinedTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnderlinedTextField.swift; sourceTree = "<group>"; };
 		DF94CDC2256D1ECF00D779E2 /* IPTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IPTextField.swift; sourceTree = "<group>"; };
@@ -41,6 +44,9 @@
 		DF94CDCA256D1F0600D779E2 /* IPTextField+UnderlinedTextFieldDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "IPTextField+UnderlinedTextFieldDelegate.swift"; sourceTree = "<group>"; };
 		DF94CDCE256D1F1700D779E2 /* IPTextField+ UITextFieldDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "IPTextField+ UITextFieldDelegate.swift"; sourceTree = "<group>"; };
 		DF94CDD2256D1F3300D779E2 /* IPError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IPError.swift; sourceTree = "<group>"; };
+		DF94CDDA256D207000D779E2 /* IPAddressTextFieldGetTextTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IPAddressTextFieldGetTextTests.swift; sourceTree = "<group>"; };
+		DF94CDDE256D209500D779E2 /* IPAddresTextFieldClearTextTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IPAddresTextFieldClearTextTests.swift; sourceTree = "<group>"; };
+		DF94CDE2256D20B600D779E2 /* IPAddressTextFieldCheckTextTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IPAddressTextFieldCheckTextTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,8 +104,11 @@
 		DF94CD91256D19F500D779E2 /* IPTextFieldTests */ = {
 			isa = PBXGroup;
 			children = (
-				DF94CD92256D19F500D779E2 /* IPTextFieldTests.swift */,
+				DF94CD92256D19F500D779E2 /* IPAddressTextFieldinsertTextTests.swift */,
 				DF94CD94256D19F500D779E2 /* Info.plist */,
+				DF94CDDA256D207000D779E2 /* IPAddressTextFieldGetTextTests.swift */,
+				DF94CDDE256D209500D779E2 /* IPAddresTextFieldClearTextTests.swift */,
+				DF94CDE2256D20B600D779E2 /* IPAddressTextFieldCheckTextTests.swift */,
 			);
 			path = IPTextFieldTests;
 			sourceTree = "<group>";
@@ -226,7 +235,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DF94CD93256D19F500D779E2 /* IPTextFieldTests.swift in Sources */,
+				DF94CD93256D19F500D779E2 /* IPAddressTextFieldinsertTextTests.swift in Sources */,
+				DF94CDDF256D209500D779E2 /* IPAddresTextFieldClearTextTests.swift in Sources */,
+				DF94CDDB256D207000D779E2 /* IPAddressTextFieldGetTextTests.swift in Sources */,
+				DF94CDE3256D20B600D779E2 /* IPAddressTextFieldCheckTextTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
