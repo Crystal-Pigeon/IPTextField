@@ -19,6 +19,11 @@
 		DF94CDDB256D207000D779E2 /* IPAddressTextFieldGetTextTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF94CDDA256D207000D779E2 /* IPAddressTextFieldGetTextTests.swift */; };
 		DF94CDDF256D209500D779E2 /* IPAddresTextFieldClearTextTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF94CDDE256D209500D779E2 /* IPAddresTextFieldClearTextTests.swift */; };
 		DF94CDE3256D20B600D779E2 /* IPAddressTextFieldCheckTextTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF94CDE2256D20B600D779E2 /* IPAddressTextFieldCheckTextTests.swift */; };
+		DF94CDED256D24C700D779E2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF94CDEC256D24C700D779E2 /* AppDelegate.swift */; };
+		DF94CDF1256D24C700D779E2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF94CDF0256D24C700D779E2 /* ViewController.swift */; };
+		DF94CDF4256D24C700D779E2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF94CDF2256D24C700D779E2 /* Main.storyboard */; };
+		DF94CDF6256D24CA00D779E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF94CDF5256D24CA00D779E2 /* Assets.xcassets */; };
+		DF94CDF9256D24CA00D779E2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF94CDF7256D24CA00D779E2 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +52,13 @@
 		DF94CDDA256D207000D779E2 /* IPAddressTextFieldGetTextTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IPAddressTextFieldGetTextTests.swift; sourceTree = "<group>"; };
 		DF94CDDE256D209500D779E2 /* IPAddresTextFieldClearTextTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IPAddresTextFieldClearTextTests.swift; sourceTree = "<group>"; };
 		DF94CDE2256D20B600D779E2 /* IPAddressTextFieldCheckTextTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IPAddressTextFieldCheckTextTests.swift; sourceTree = "<group>"; };
+		DF94CDEA256D24C700D779E2 /* IPTextFieldExamples.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IPTextFieldExamples.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF94CDEC256D24C700D779E2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DF94CDF0256D24C700D779E2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DF94CDF3256D24C700D779E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DF94CDF5256D24CA00D779E2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DF94CDF8256D24CA00D779E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DF94CDFA256D24CA00D779E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +77,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DF94CDE7256D24C700D779E2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -73,6 +92,7 @@
 			children = (
 				DF94CD86256D19F500D779E2 /* IPTextField */,
 				DF94CD91256D19F500D779E2 /* IPTextFieldTests */,
+				DF94CDEB256D24C700D779E2 /* IPTextFieldExamples */,
 				DF94CD85256D19F500D779E2 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -82,6 +102,7 @@
 			children = (
 				DF94CD84256D19F500D779E2 /* IPTextField.framework */,
 				DF94CD8D256D19F500D779E2 /* IPTextFieldTests.xctest */,
+				DF94CDEA256D24C700D779E2 /* IPTextFieldExamples.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -111,6 +132,19 @@
 				DF94CDE2256D20B600D779E2 /* IPAddressTextFieldCheckTextTests.swift */,
 			);
 			path = IPTextFieldTests;
+			sourceTree = "<group>";
+		};
+		DF94CDEB256D24C700D779E2 /* IPTextFieldExamples */ = {
+			isa = PBXGroup;
+			children = (
+				DF94CDEC256D24C700D779E2 /* AppDelegate.swift */,
+				DF94CDF0256D24C700D779E2 /* ViewController.swift */,
+				DF94CDF2256D24C700D779E2 /* Main.storyboard */,
+				DF94CDF5256D24CA00D779E2 /* Assets.xcassets */,
+				DF94CDF7256D24CA00D779E2 /* LaunchScreen.storyboard */,
+				DF94CDFA256D24CA00D779E2 /* Info.plist */,
+			);
+			path = IPTextFieldExamples;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -163,6 +197,23 @@
 			productReference = DF94CD8D256D19F500D779E2 /* IPTextFieldTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		DF94CDE9256D24C700D779E2 /* IPTextFieldExamples */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DF94CDFB256D24CA00D779E2 /* Build configuration list for PBXNativeTarget "IPTextFieldExamples" */;
+			buildPhases = (
+				DF94CDE6256D24C700D779E2 /* Sources */,
+				DF94CDE7256D24C700D779E2 /* Frameworks */,
+				DF94CDE8256D24C700D779E2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IPTextFieldExamples;
+			productName = IPTextFieldExamples;
+			productReference = DF94CDEA256D24C700D779E2 /* IPTextFieldExamples.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -177,6 +228,9 @@
 						LastSwiftMigration = 1220;
 					};
 					DF94CD8C256D19F500D779E2 = {
+						CreatedOnToolsVersion = 12.2;
+					};
+					DF94CDE9256D24C700D779E2 = {
 						CreatedOnToolsVersion = 12.2;
 					};
 				};
@@ -196,6 +250,7 @@
 			targets = (
 				DF94CD83256D19F500D779E2 /* IPTextField */,
 				DF94CD8C256D19F500D779E2 /* IPTextFieldTests */,
+				DF94CDE9256D24C700D779E2 /* IPTextFieldExamples */,
 			);
 		};
 /* End PBXProject section */
@@ -212,6 +267,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF94CDE8256D24C700D779E2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF94CDF9256D24CA00D779E2 /* LaunchScreen.storyboard in Resources */,
+				DF94CDF6256D24CA00D779E2 /* Assets.xcassets in Resources */,
+				DF94CDF4256D24C700D779E2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -242,6 +307,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DF94CDE6256D24C700D779E2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF94CDF1256D24C700D779E2 /* ViewController.swift in Sources */,
+				DF94CDED256D24C700D779E2 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -251,6 +325,25 @@
 			targetProxy = DF94CD8F256D19F500D779E2 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DF94CDF2256D24C700D779E2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DF94CDF3256D24C700D779E2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DF94CDF7256D24CA00D779E2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DF94CDF8256D24CA00D779E2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		DF94CD96256D19F500D779E2 /* Debug */ = {
@@ -468,6 +561,46 @@
 			};
 			name = Release;
 		};
+		DF94CDFC256D24CA00D779E2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LXX5Y58F8S;
+				INFOPLIST_FILE = IPTextFieldExamples/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.crystalpigeon.IPTextFieldExamples;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DF94CDFD256D24CA00D779E2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LXX5Y58F8S;
+				INFOPLIST_FILE = IPTextFieldExamples/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.crystalpigeon.IPTextFieldExamples;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -494,6 +627,15 @@
 			buildConfigurations = (
 				DF94CD9C256D19F500D779E2 /* Debug */,
 				DF94CD9D256D19F500D779E2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DF94CDFB256D24CA00D779E2 /* Build configuration list for PBXNativeTarget "IPTextFieldExamples" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF94CDFC256D24CA00D779E2 /* Debug */,
+				DF94CDFD256D24CA00D779E2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
