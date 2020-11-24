@@ -10,6 +10,12 @@
 		DF94CD8E256D19F500D779E2 /* IPTextField.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF94CD84256D19F500D779E2 /* IPTextField.framework */; };
 		DF94CD93256D19F500D779E2 /* IPTextFieldTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF94CD92256D19F500D779E2 /* IPTextFieldTests.swift */; };
 		DF94CD95256D19F500D779E2 /* IPTextField.h in Headers */ = {isa = PBXBuildFile; fileRef = DF94CD87256D19F500D779E2 /* IPTextField.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DF94CDBF256D1EB000D779E2 /* UnderlinedTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF94CDBE256D1EB000D779E2 /* UnderlinedTextField.swift */; };
+		DF94CDC3256D1ECF00D779E2 /* IPTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF94CDC2256D1ECF00D779E2 /* IPTextField.swift */; };
+		DF94CDC7256D1EE800D779E2 /* IPTextField+Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF94CDC6256D1EE800D779E2 /* IPTextField+Functions.swift */; };
+		DF94CDCB256D1F0600D779E2 /* IPTextField+UnderlinedTextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF94CDCA256D1F0600D779E2 /* IPTextField+UnderlinedTextFieldDelegate.swift */; };
+		DF94CDCF256D1F1700D779E2 /* IPTextField+ UITextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF94CDCE256D1F1700D779E2 /* IPTextField+ UITextFieldDelegate.swift */; };
+		DF94CDD3256D1F3300D779E2 /* IPError.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF94CDD2256D1F3300D779E2 /* IPError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +35,12 @@
 		DF94CD8D256D19F500D779E2 /* IPTextFieldTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IPTextFieldTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF94CD92256D19F500D779E2 /* IPTextFieldTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IPTextFieldTests.swift; sourceTree = "<group>"; };
 		DF94CD94256D19F500D779E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DF94CDBE256D1EB000D779E2 /* UnderlinedTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnderlinedTextField.swift; sourceTree = "<group>"; };
+		DF94CDC2256D1ECF00D779E2 /* IPTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IPTextField.swift; sourceTree = "<group>"; };
+		DF94CDC6256D1EE800D779E2 /* IPTextField+Functions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "IPTextField+Functions.swift"; sourceTree = "<group>"; };
+		DF94CDCA256D1F0600D779E2 /* IPTextField+UnderlinedTextFieldDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "IPTextField+UnderlinedTextFieldDelegate.swift"; sourceTree = "<group>"; };
+		DF94CDCE256D1F1700D779E2 /* IPTextField+ UITextFieldDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "IPTextField+ UITextFieldDelegate.swift"; sourceTree = "<group>"; };
+		DF94CDD2256D1F3300D779E2 /* IPError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IPError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +85,12 @@
 			children = (
 				DF94CD87256D19F500D779E2 /* IPTextField.h */,
 				DF94CD88256D19F500D779E2 /* Info.plist */,
+				DF94CDBE256D1EB000D779E2 /* UnderlinedTextField.swift */,
+				DF94CDC2256D1ECF00D779E2 /* IPTextField.swift */,
+				DF94CDC6256D1EE800D779E2 /* IPTextField+Functions.swift */,
+				DF94CDCA256D1F0600D779E2 /* IPTextField+UnderlinedTextFieldDelegate.swift */,
+				DF94CDCE256D1F1700D779E2 /* IPTextField+ UITextFieldDelegate.swift */,
+				DF94CDD2256D1F3300D779E2 /* IPError.swift */,
 			);
 			path = IPTextField;
 			sourceTree = "<group>";
@@ -147,6 +165,7 @@
 				TargetAttributes = {
 					DF94CD83256D19F500D779E2 = {
 						CreatedOnToolsVersion = 12.2;
+						LastSwiftMigration = 1220;
 					};
 					DF94CD8C256D19F500D779E2 = {
 						CreatedOnToolsVersion = 12.2;
@@ -194,6 +213,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF94CDC7256D1EE800D779E2 /* IPTextField+Functions.swift in Sources */,
+				DF94CDC3256D1ECF00D779E2 /* IPTextField.swift in Sources */,
+				DF94CDCF256D1F1700D779E2 /* IPTextField+ UITextFieldDelegate.swift in Sources */,
+				DF94CDD3256D1F3300D779E2 /* IPError.swift in Sources */,
+				DF94CDBF256D1EB000D779E2 /* UnderlinedTextField.swift in Sources */,
+				DF94CDCB256D1F0600D779E2 /* IPTextField+UnderlinedTextFieldDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +366,7 @@
 		DF94CD99256D19F500D779E2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = LXX5Y58F8S;
@@ -359,6 +385,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SUPPORTS_MACCATALYST = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -367,6 +394,7 @@
 		DF94CD9A256D19F500D779E2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = LXX5Y58F8S;
@@ -393,6 +421,7 @@
 		DF94CD9C256D19F500D779E2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LXX5Y58F8S;
 				INFOPLIST_FILE = IPTextFieldTests/Info.plist;
@@ -411,6 +440,7 @@
 		DF94CD9D256D19F500D779E2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LXX5Y58F8S;
 				INFOPLIST_FILE = IPTextFieldTests/Info.plist;
