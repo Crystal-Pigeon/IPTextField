@@ -31,24 +31,30 @@ Properties that can be changed through code are:
 
 # Functions
 ## Functions for inserting text
-Use this function to insert text at a certaint position in the ip text field
+Use the function `insertText(at position: Int, text: String)` to insert text at a certain position in the IPTextField
 ```swift
 try! ipTextField.insertText(at: 0, text: "11")
 ```
-Use this function to insert text in the entire ip text field
+Use the function `insertText(part1: String, part2: String, part3: String, part4: String)` to insert text in the entire IPTextField
 ```swift
 try! ipTextField.insertText(part1: "32", part2: "121", part3: "11", part4: "0")
 ```
 ## Functions for getting text
+Use the function `text(at position: Int)` to get text from a certain position in the IPTextField
 ```swift
 let text = try! ipTextField.text(at: 0)
 ```
+Use the function `text()` to get text from the IPTextField in an ip address format
 ```swift
 let text2 = ipTextField.text()
 ```
 ## Functions for checking the state of the ip text field
+To check if the IPTextField is empty use the `isEmpty()` function
 ```swift
 let isEmpty = ipTextField.isEmpty()
+```
+To check if the IPTextField is completed use the `isCompleted()` function
+```swift
 let isCompleted = ipTextField.isCompleted()
 ```
 ## Functions for clearing the text in the ip text field
@@ -79,7 +85,7 @@ do {
 }
 ```
 
-# Delegate
+# IPTextFieldDelegate
 ```swift
 ipTextField.delegate = self
 ```
