@@ -11,8 +11,8 @@ extension IPTextField {
     
     // MARK: - Boolean functions
     
-    /// This method returns true if every part of the ip addres contains some text
-    /// - Returns: A boolean value inidcating whater the given ipAddressView is completed
+    /// This method returns true if every part of the ip address text field contains some text
+    /// - Returns: A boolean value inidicating whether the given ip address text field is completed
     public func isCompleted() -> Bool {
         for textField in textFields {
             if textField.text!.isEmpty {
@@ -23,7 +23,7 @@ extension IPTextField {
     }
     
     /// This method returns true if every part of the ip addres is empty
-    /// - Returns: A boolean value inidcating whater the given ipAddressView is completed
+    /// - Returns: A boolean value inidcating whether the given ip address text field is empty
     public func isEmpty() -> Bool {
         for textField in textFields {
             if !textField.text!.isEmpty {
@@ -36,16 +36,16 @@ extension IPTextField {
     // MARK: - Get text functions
     
     /// This method returns the ip address inserted in the text field
-    /// - Returns: A string in the ip format
+    /// - Returns: A string in the ip address format
     public func text() -> String {
         return "\(textFields[0].text!).\(textFields[1].text!).\(textFields[2].text!).\(textFields[3].text!)"
     }
     
     /// This method returns the  text in the ip address in the given position
     /// - Parameter position : The position of the text field
-    /// - Returns: A string in the ip format or nil if the textField is not completed
+    /// - Returns: A string containing the part of the ip address at the given position
     /// - Warning: The first position is 0
-    /// - Throws: error
+    /// - Throws: IPError
     public func text(at position: Int) throws -> String {
         guard position >= 0 && position <= 3 else { throw IPError(type: IPErrorType.invalidPosition) }
         return self.textFields[position].text!
@@ -58,7 +58,7 @@ extension IPTextField {
     /// - Parameter part2: The text that should be inserted in the second text field
     /// - Parameter part3: The text that should be inserted in the third text field
     /// - Parameter part4: The text that should be inserted in the fourth text field
-    /// - Throws: error
+    /// - Throws: IPError
     public func insertText(part1: String, part2: String, part3: String, part4: String) throws {
         do {
             try self.insertText(at: 0, text: part1)
@@ -75,7 +75,7 @@ extension IPTextField {
     /// - Parameter position: The position of the text field
     /// - Parameter text: The text to be inserted
     /// - Warning: Position starts at 0
-    /// - Throws: error
+    /// - Throws: IPError
     public func insertText(at position: Int, text: String) throws {
         
         // check that the position is valid
@@ -103,7 +103,7 @@ extension IPTextField {
     
     /// This method clears all text from the ip address text field at the given positions
     /// - Parameter position: The position of the text field
-    /// - Throws
+    /// - Throws IPError
     public func clear(at position: Int) throws {
         // check that the position is valid
         guard position >= 0 && position <= 3 else { throw IPError(type: IPErrorType.invalidPosition) }
