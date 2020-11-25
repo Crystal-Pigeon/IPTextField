@@ -58,11 +58,17 @@ To check if the IPTextField is completed use the `isCompleted()` function
 let isCompleted = ipTextField.isCompleted()
 ```
 ## Functions for clearing the text in the ip text field
+To delete text from a certain position in a text field use the `clear(at position: Int)` method
 ```swift
 try! ipTextField.clear(at: 0)
+```
+To delete text from the IPTextField use the `clear()` method
+```swift
 ipTextField.clear()
 ```
-# Error handling
+
+# Error handling 
+All the methods that insert a certain text in the IPTextField will throw an error if the text contains characters that are not digits
 ```swift
 do {
   try ipTextField.insertText(at: 0, text: "aa")
@@ -70,6 +76,8 @@ do {
   let description = error.localizedDescription //Only digits are allowed
 }
 ```
+
+All the methods that take a position parameter will throw an error if the position is less than 0 and bigger than 3
 ```swift
 do {
   try ipTextField.insertText(at: 9, text: "111")
@@ -77,6 +85,8 @@ do {
   let description = error.localizedDescription //Position must be between 0 and 3
 }
 ```
+
+All the methods that insert a certain text in the IPTextField will throw an error if the text contains a number larger than 255
 ```swift
 do {
   try ipTextField.insertText(at: 0, text: "256")
