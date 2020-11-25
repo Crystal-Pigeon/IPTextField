@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DF512F91256D2B1100B2FB8F /* IPTextField.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF94CD84256D19F500D779E2 /* IPTextField.framework */; };
+		DF512F92256D2B1100B2FB8F /* IPTextField.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DF94CD84256D19F500D779E2 /* IPTextField.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		DF94CD8E256D19F500D779E2 /* IPTextField.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF94CD84256D19F500D779E2 /* IPTextField.framework */; };
 		DF94CD93256D19F500D779E2 /* IPAddressTextFieldinsertTextTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF94CD92256D19F500D779E2 /* IPAddressTextFieldinsertTextTests.swift */; };
 		DF94CD95256D19F500D779E2 /* IPTextField.h in Headers */ = {isa = PBXBuildFile; fileRef = DF94CD87256D19F500D779E2 /* IPTextField.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -28,6 +30,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		DF512F93256D2B1100B2FB8F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DF94CD7B256D19F500D779E2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DF94CD83256D19F500D779E2;
+			remoteInfo = IPTextField;
+		};
 		DF94CD8F256D19F500D779E2 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = DF94CD7B256D19F500D779E2 /* Project object */;
@@ -36,6 +45,20 @@
 			remoteInfo = IPTextField;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		DF512F95256D2B1100B2FB8F /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				DF512F92256D2B1100B2FB8F /* IPTextField.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		DF94CD84256D19F500D779E2 /* IPTextField.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = IPTextField.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -83,12 +106,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF512F91256D2B1100B2FB8F /* IPTextField.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DF512F90256D2B1100B2FB8F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		DF94CD7A256D19F500D779E2 = {
 			isa = PBXGroup;
 			children = (
@@ -96,6 +127,7 @@
 				DF94CD91256D19F500D779E2 /* IPTextFieldTests */,
 				DF94CDEB256D24C700D779E2 /* IPTextFieldExamples */,
 				DF94CD85256D19F500D779E2 /* Products */,
+				DF512F90256D2B1100B2FB8F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -207,10 +239,12 @@
 				DF94CDE6256D24C700D779E2 /* Sources */,
 				DF94CDE7256D24C700D779E2 /* Frameworks */,
 				DF94CDE8256D24C700D779E2 /* Resources */,
+				DF512F95256D2B1100B2FB8F /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				DF512F94256D2B1100B2FB8F /* PBXTargetDependency */,
 			);
 			name = IPTextFieldExamples;
 			productName = IPTextFieldExamples;
@@ -323,6 +357,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		DF512F94256D2B1100B2FB8F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DF94CD83256D19F500D779E2 /* IPTextField */;
+			targetProxy = DF512F93256D2B1100B2FB8F /* PBXContainerItemProxy */;
+		};
 		DF94CD90256D19F500D779E2 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = DF94CD83256D19F500D779E2 /* IPTextField */;
@@ -581,7 +620,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.crystalpigeon.IPTextFieldExamples;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -601,7 +640,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.crystalpigeon.IPTextFieldExamples;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

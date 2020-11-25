@@ -14,7 +14,7 @@ public protocol IPTextFieldDelegate {
 @IBDesignable public class IPTextField: UIView {
     
     // MARK: - Properties that can be changed in Storyboard
-    @IBInspectable var lineColor: UIColor = .black {
+    @IBInspectable public var lineColor: UIColor = .black {
         didSet {
             for textField in self.textFields {
                 textField.bottomBorder.backgroundColor = lineColor
@@ -27,7 +27,7 @@ public protocol IPTextFieldDelegate {
         }
     }
     
-    @IBInspectable var textColor: UIColor = .black {
+    @IBInspectable public var textColor: UIColor = .black {
         didSet {
             for textField in self.textFields {
                 textField.textColor = textColor
@@ -35,13 +35,13 @@ public protocol IPTextFieldDelegate {
         }
     }
     
-    @IBInspectable var borderColor: UIColor = .black {
+    @IBInspectable public var borderColor: UIColor = .black {
         didSet {
             self.layer.borderColor = borderColor.cgColor
         }
     }
     
-    @IBInspectable var borderWidth: Double = 0 {
+    @IBInspectable public var borderWidth: Double = 0 {
         didSet {
             if borderWidth <= 4 {
                 self.layer.borderWidth = CGFloat(borderWidth)
@@ -51,7 +51,7 @@ public protocol IPTextFieldDelegate {
         }
     }
     
-    @IBInspectable var cornerRadius: Double = 0 {
+    @IBInspectable public var cornerRadius: Double = 0 {
         didSet {
             self.layer.cornerRadius = CGFloat(cornerRadius)
         }
@@ -157,10 +157,14 @@ public protocol IPTextFieldDelegate {
     }
     
     private func setupLayout() {
+        let font = self.dots[0].font
+        let fontAttributes = [NSAttributedString.Key.font: font]
+        let myText = self.dots[0].text!
+        let size = (myText as NSString).size(withAttributes: fontAttributes as [NSAttributedString.Key : Any])
         NSLayoutConstraint.activate([
             mainStack.topAnchor.constraint(equalTo: topAnchor, constant: 5),
             mainStack.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 5),
-            mainStack.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -5),
+            mainStack.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -5 + size.width),
             mainStack.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -5)
         ])
     }
