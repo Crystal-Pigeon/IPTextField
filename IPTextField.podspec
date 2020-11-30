@@ -5,7 +5,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "IPTextField"
-  spec.version      = "0.0.1"
+  spec.version      = "0.0.2"
   spec.summary      = "Custom Text Field for instering ip addresses"
   spec.description  = <<-DESC 
 IPTextField is a custom text field that enables users to enter ip address easily. The ip address gets validated while the user types.
