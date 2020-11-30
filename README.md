@@ -2,13 +2,41 @@
 
 IPTextField is a custom UIView subclass that enables users to easily enter ip addresses. The ip address is validated during typing.
 
+![Alt Text](https://github.com/Crystal-Pigeon/IPTextField/blob/dev/images/intro.gif)
+### Validation that the library ensures
+* only digits between 0-255 can be entered
+* when one field is filled the next field will automatically be activated
+* a keyboard toolbar that makes it easy to switch between fields
+
+
 # Using the IPTextField
+### Through code
 ```swift
 import IPTextField
 let ipTextField = IPTextField()
 ```
+### Through storyboard
+Drag an UIView and change the class property
+
+
+![Alt Text](https://github.com/Crystal-Pigeon/IPTextField/blob/dev/images/storyboard.png)
 
 # Customizing the IPTextField
+
+### Through storyboard
+Properties that can be changed through interface builder and/or code are:
+![Alt Text](https://github.com/Crystal-Pigeon/IPTextField/blob/dev/images/customization.png)
+* line color
+* text color
+* border color
+* border width
+* corner radius
+
+### Through code
+Properties that can be changed through code are:
+* font
+* text alignment
+
 ```swift
 ipTextField.lineColor = UIColor.red
 ipTextField.textColor = UIColor.purple
@@ -18,16 +46,6 @@ ipTextField.cornerRadius = 10
 ipTextField.font = .systemFont(ofSize: 30)
 ipTextField.textAlignment = .left
 ```
-Properties that can be changed through interface builder and/or code are:
-* line color
-* text color
-* border color
-* border width
-* corner radius
-
-Properties that can be changed through code are:
-* font
-* text alignment
 
 # Functions
 ## Functions for inserting text
