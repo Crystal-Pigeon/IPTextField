@@ -3,9 +3,9 @@
 IPTextField is a custom UIView subclass that enables users to easily enter ip addresses. The ip address is validated during typing.
 
 ![Alt Text](https://github.com/Crystal-Pigeon/IPTextField/blob/dev/images/intro.gif)
-### Validation that the library ensures
-* only digits between 0-255 can be entered
-* when one field is filled the next field will automatically be activated
+### This library ensures:
+* that only digits between 0-255 can be entered
+* that when one field is filled the next field will automatically be activated
 * a keyboard toolbar that makes it easy to switch between fields
 
 
@@ -25,12 +25,13 @@ Drag an UIView and change the class property
 
 ### Through storyboard
 Properties that can be changed through interface builder and/or code are:
-![Alt Text](https://github.com/Crystal-Pigeon/IPTextField/blob/dev/images/customization.png)
 * line color
 * text color
 * border color
 * border width
 * corner radius
+
+![Alt Text](https://github.com/Crystal-Pigeon/IPTextField/blob/dev/images/customization.png)
 
 ### Through code
 Properties that can be changed through code are:
@@ -47,35 +48,35 @@ ipTextField.font = .systemFont(ofSize: 30)
 ipTextField.textAlignment = .left
 ```
 
-# Functions
-## Functions for inserting text
-Use the function `insertText(at position: Int, text: String)` to insert text at a certain position in the IPTextField
+# Methods
+## Methods for inserting text
+Use the method `insertText(at position: Int, text: String)` to insert text at a certain position in the IPTextField
 ```swift
 try! ipTextField.insertText(at: 0, text: "11")
 ```
-Use the function `insertText(part1: String, part2: String, part3: String, part4: String)` to insert text in the entire IPTextField
+Use the method `insertText(part1: String, part2: String, part3: String, part4: String)` to insert text in the entire IPTextField
 ```swift
 try! ipTextField.insertText(part1: "32", part2: "121", part3: "11", part4: "0")
 ```
-## Functions for getting text
-Use the function `text(at position: Int)` to get text from a certain position in the IPTextField
+## Methods for getting text
+Use the method `text(at position: Int)` to get text from a certain position in the IPTextField
 ```swift
 let text = try! ipTextField.text(at: 0)
 ```
-Use the function `text()` to get text from the IPTextField in an ip address format
+Use the method `text()` to get text from the IPTextField in an ip address format
 ```swift
 let text2 = ipTextField.text()
 ```
-## Functions for checking the state of the ip text field
-To check if the IPTextField is empty use the `isEmpty()` function
+## Methods for checking the state of the ip text field
+To check if the IPTextField is empty use the `isEmpty()` method
 ```swift
 let isEmpty = ipTextField.isEmpty()
 ```
-To check if the IPTextField is completed use the `isCompleted()` function
+To check if the IPTextField is completed use the `isCompleted()` method
 ```swift
 let isCompleted = ipTextField.isCompleted()
 ```
-## Functions for clearing the text in the ip text field
+## Methods for clearing the text in the ip text field
 To delete text from a certain position in a text field use the `clear(at position: Int)` method
 ```swift
 try! ipTextField.clear(at: 0)
@@ -114,12 +115,13 @@ do {
 ```
 
 # IPTextFieldDelegate
+If you want to get notified when the insert has finished, assing a delegate to the IPTextField
 ```swift
 ipTextField.delegate = self
 ```
 Make the desired object conform to the `IPTextFieldDelegate` protocol and implement the `insertDone()` method
 ```swift
-extension CodeViewController: IPTextFieldDelegate {
+extension ViewController: IPTextFieldDelegate {
     func insertDone() {
         print("insert is finished")
     }
