@@ -73,7 +73,10 @@ class UnderlinedTextField: UITextField {
         let button = UIButton(type: .custom)
         button.frame = CGRect(x: 0.0, y: 0.0, width: 20, height: 20)
         let bundle = Bundle(for: type(of: self))
-        button.setImage(UIImage(named:imageName, in:bundle, compatibleWith:nil), for: .normal)
+        let bundleURL = bundle.resourceURL?.appendingPathComponent("IPTextField.bundle")
+        let resourceBundle = Bundle(url: bundleURL!)
+        let image = UIImage(named:imageName, in:resourceBundle, compatibleWith:nil)
+        button.setImage(image, for: .normal)
         button.addTarget(self, action: selector, for: .touchUpInside)
         let barButtonItem: UIBarButtonItem = UIBarButtonItem(customView: button)
         
