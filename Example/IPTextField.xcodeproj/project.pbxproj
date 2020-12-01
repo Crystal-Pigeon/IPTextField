@@ -10,25 +10,10 @@
 		0E50ED48B51C81861FC86EC6 /* Pods_IPTextField_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11EBACA71F49D4CCBABFCE0E /* Pods_IPTextField_Example.framework */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
-		629AA8032670734561F1BE22 /* Pods_IPTextField_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44E8FB0CE8E7866CD5B4D61A /* Pods_IPTextField_Tests.framework */; };
-		DF46747E2575215B006BE7CD /* IPAddressTextFieldGetTextTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF46747A2575215B006BE7CD /* IPAddressTextFieldGetTextTests.swift */; };
-		DF46747F2575215B006BE7CD /* IPAddresTextFieldClearTextTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF46747B2575215B006BE7CD /* IPAddresTextFieldClearTextTests.swift */; };
-		DF4674802575215B006BE7CD /* IPAddressTextFieldinsertTextTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF46747C2575215B006BE7CD /* IPAddressTextFieldinsertTextTests.swift */; };
-		DF4674812575215C006BE7CD /* IPAddressTextFieldCheckTextTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF46747D2575215B006BE7CD /* IPAddressTextFieldCheckTextTests.swift */; };
 		DF46748B25752194006BE7CD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF46748A25752194006BE7CD /* Main.storyboard */; };
 		DF467491257521AD006BE7CD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF467490257521AD006BE7CD /* ViewController.swift */; };
 		DF467497257521B8006BE7CD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF467496257521B8006BE7CD /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		607FACE61AFB9204008FA782 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 607FACC81AFB9204008FA782 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 607FACCF1AFB9204008FA782;
-			remoteInfo = IPTextField;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		11EBACA71F49D4CCBABFCE0E /* Pods_IPTextField_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IPTextField_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -38,18 +23,12 @@
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACDC1AFB9204008FA782 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		607FACE51AFB9204008FA782 /* IPTextField_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IPTextField_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6A616DC071C8003FC75BB337 /* Pods-IPTextField_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IPTextField_Example.release.xcconfig"; path = "Target Support Files/Pods-IPTextField_Example/Pods-IPTextField_Example.release.xcconfig"; sourceTree = "<group>"; };
 		6F148A5D4A071970AF7DE8E0 /* Pods-IPTextField_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IPTextField_Tests.release.xcconfig"; path = "Target Support Files/Pods-IPTextField_Tests/Pods-IPTextField_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		6FC29B81658933EF512F0650 /* Pods-IPTextField_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IPTextField_Tests.debug.xcconfig"; path = "Target Support Files/Pods-IPTextField_Tests/Pods-IPTextField_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		837E72F3151077DE92E29882 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		848F1C2F56B50FAEDEFDB967 /* IPTextField.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = IPTextField.podspec; path = ../IPTextField.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		ACFDA4A5AAE16670A209BBF2 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		DF46747A2575215B006BE7CD /* IPAddressTextFieldGetTextTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IPAddressTextFieldGetTextTests.swift; sourceTree = "<group>"; };
-		DF46747B2575215B006BE7CD /* IPAddresTextFieldClearTextTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IPAddresTextFieldClearTextTests.swift; sourceTree = "<group>"; };
-		DF46747C2575215B006BE7CD /* IPAddressTextFieldinsertTextTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IPAddressTextFieldinsertTextTests.swift; sourceTree = "<group>"; };
-		DF46747D2575215B006BE7CD /* IPAddressTextFieldCheckTextTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IPAddressTextFieldCheckTextTests.swift; sourceTree = "<group>"; };
 		DF46748A25752194006BE7CD /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		DF467490257521AD006BE7CD /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DF467496257521B8006BE7CD /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -61,14 +40,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				0E50ED48B51C81861FC86EC6 /* Pods_IPTextField_Example.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		607FACE21AFB9204008FA782 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				629AA8032670734561F1BE22 /* Pods_IPTextField_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,7 +60,6 @@
 			children = (
 				607FACF51AFB993E008FA782 /* Podspec Metadata */,
 				607FACD21AFB9204008FA782 /* Example for IPTextField */,
-				607FACE81AFB9204008FA782 /* Tests */,
 				607FACD11AFB9204008FA782 /* Products */,
 				B04AE71906A4F93191ECDD16 /* Pods */,
 				6079CB63470BBA2FCB3FC812 /* Frameworks */,
@@ -100,7 +70,6 @@
 			isa = PBXGroup;
 			children = (
 				607FACD01AFB9204008FA782 /* IPTextField_Example.app */,
-				607FACE51AFB9204008FA782 /* IPTextField_Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -123,26 +92,6 @@
 			isa = PBXGroup;
 			children = (
 				607FACD41AFB9204008FA782 /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		607FACE81AFB9204008FA782 /* Tests */ = {
-			isa = PBXGroup;
-			children = (
-				DF46747D2575215B006BE7CD /* IPAddressTextFieldCheckTextTests.swift */,
-				DF46747A2575215B006BE7CD /* IPAddressTextFieldGetTextTests.swift */,
-				DF46747C2575215B006BE7CD /* IPAddressTextFieldinsertTextTests.swift */,
-				DF46747B2575215B006BE7CD /* IPAddresTextFieldClearTextTests.swift */,
-				607FACE91AFB9204008FA782 /* Supporting Files */,
-			);
-			path = Tests;
-			sourceTree = "<group>";
-		};
-		607FACE91AFB9204008FA782 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				607FACEA1AFB9204008FA782 /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -190,25 +139,6 @@
 			productReference = 607FACD01AFB9204008FA782 /* IPTextField_Example.app */;
 			productType = "com.apple.product-type.application";
 		};
-		607FACE41AFB9204008FA782 /* IPTextField_Tests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 607FACF21AFB9204008FA782 /* Build configuration list for PBXNativeTarget "IPTextField_Tests" */;
-			buildPhases = (
-				59DF9EB84BACDA6691BE8D4E /* [CP] Check Pods Manifest.lock */,
-				607FACE11AFB9204008FA782 /* Sources */,
-				607FACE21AFB9204008FA782 /* Frameworks */,
-				607FACE31AFB9204008FA782 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				607FACE71AFB9204008FA782 /* PBXTargetDependency */,
-			);
-			name = IPTextField_Tests;
-			productName = Tests;
-			productReference = 607FACE51AFB9204008FA782 /* IPTextField_Tests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -222,11 +152,6 @@
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
 						LastSwiftMigration = 0900;
-					};
-					607FACE41AFB9204008FA782 = {
-						CreatedOnToolsVersion = 6.3.1;
-						LastSwiftMigration = 0900;
-						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
 				};
 			};
@@ -245,7 +170,6 @@
 			projectRoot = "";
 			targets = (
 				607FACCF1AFB9204008FA782 /* IPTextField_Example */,
-				607FACE41AFB9204008FA782 /* IPTextField_Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -261,38 +185,9 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		607FACE31AFB9204008FA782 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		59DF9EB84BACDA6691BE8D4E /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-IPTextField_Tests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
 		A5E2A280D77B0EF587DAFA19 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -345,26 +240,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		607FACE11AFB9204008FA782 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				DF46747F2575215B006BE7CD /* IPAddresTextFieldClearTextTests.swift in Sources */,
-				DF46747E2575215B006BE7CD /* IPAddressTextFieldGetTextTests.swift in Sources */,
-				DF4674812575215C006BE7CD /* IPAddressTextFieldCheckTextTests.swift in Sources */,
-				DF4674802575215B006BE7CD /* IPAddressTextFieldinsertTextTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		607FACE71AFB9204008FA782 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 607FACCF1AFB9204008FA782 /* IPTextField_Example */;
-			targetProxy = 607FACE61AFB9204008FA782 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		607FACDE1AFB9204008FA782 /* LaunchScreen.xib */ = {
@@ -509,46 +385,6 @@
 			};
 			name = Release;
 		};
-		607FACF31AFB9204008FA782 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6FC29B81658933EF512F0650 /* Pods-IPTextField_Tests.debug.xcconfig */;
-			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = Tests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IPTextField_Example.app/IPTextField_Example";
-			};
-			name = Debug;
-		};
-		607FACF41AFB9204008FA782 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6F148A5D4A071970AF7DE8E0 /* Pods-IPTextField_Tests.release.xcconfig */;
-			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = Tests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IPTextField_Example.app/IPTextField_Example";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -566,15 +402,6 @@
 			buildConfigurations = (
 				607FACF01AFB9204008FA782 /* Debug */,
 				607FACF11AFB9204008FA782 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		607FACF21AFB9204008FA782 /* Build configuration list for PBXNativeTarget "IPTextField_Tests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				607FACF31AFB9204008FA782 /* Debug */,
-				607FACF41AFB9204008FA782 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
