@@ -10,15 +10,15 @@ Pod::Spec.new do |s|
   s.homepage         = 'https://github.com/Crystal-Pigeon/IPTextField'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'marianasamardzic' => 'marianasamardzic2@gmail.com' }
-  s.source           = { :git => 'https://github.com/Crystal-Pigeon/IPTextField.git', :tag => 'v1.0.0' }
+  s.source           = { :git => 'https://github.com/Crystal-Pigeon/IPTextField.git', :branch => 'package' }
 
   s.ios.deployment_target = '9.0'
 s.swift_version = '4.2'
 
-  s.source_files = 'IPTextField/Classes/**/*'
+  s.source_files = 'Sources/**/*.swift'
   
    s.resource_bundles = {
-     'IPTextField' => ['IPTextField/Assets/**/*']
+     'IPTextField' => ['Sources/IPTextField/Assets/**/*']
    }
 
 end
