@@ -1,0 +1,511 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DFFA34A725ADB64400ED1590 /* UnderlinedTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFFA34A625ADB64400ED1590 /* UnderlinedTextField.swift */; };
+		DFFA34B225ADB65000ED1590 /* IPError.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFFA34AC25ADB65000ED1590 /* IPError.swift */; };
+		DFFA34B325ADB65000ED1590 /* IPTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFFA34AD25ADB65000ED1590 /* IPTextField.swift */; };
+		DFFA34B425ADB65000ED1590 /* IPTextField+Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFFA34AE25ADB65000ED1590 /* IPTextField+Functions.swift */; };
+		DFFA34B525ADB65000ED1590 /* IPTextField+UnderlinedTextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFFA34AF25ADB65000ED1590 /* IPTextField+UnderlinedTextFieldDelegate.swift */; };
+		DFFA34B725ADB65000ED1590 /* IPTextField+ UITextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFFA34B125ADB65000ED1590 /* IPTextField+ UITextFieldDelegate.swift */; };
+		DFFA34BC25ADB65A00ED1590 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DFFA34BB25ADB65A00ED1590 /* Media.xcassets */; };
+		DFFA34CD25ADB79C00ED1590 /* IPTextField.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFFA348625ADB5E600ED1590 /* IPTextField.framework */; platformFilter = ios; };
+		DFFA34D925ADB7B600ED1590 /* IPAddressTextFieldinsertTextTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFFA34D525ADB7B600ED1590 /* IPAddressTextFieldinsertTextTests.swift */; };
+		DFFA34DA25ADB7B600ED1590 /* IPAddresTextFieldClearTextTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFFA34D625ADB7B600ED1590 /* IPAddresTextFieldClearTextTests.swift */; };
+		DFFA34DB25ADB7B600ED1590 /* IPAddressTextFieldCheckTextTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFFA34D725ADB7B600ED1590 /* IPAddressTextFieldCheckTextTests.swift */; };
+		DFFA34DC25ADB7B600ED1590 /* IPAddressTextFieldGetTextTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFFA34D825ADB7B600ED1590 /* IPAddressTextFieldGetTextTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DFFA34CE25ADB79C00ED1590 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DFFA347D25ADB5E500ED1590 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DFFA348525ADB5E600ED1590;
+			remoteInfo = IPTextField;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DFFA348625ADB5E600ED1590 /* IPTextField.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = IPTextField.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DFFA348A25ADB5E600ED1590 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DFFA34A625ADB64400ED1590 /* UnderlinedTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnderlinedTextField.swift; sourceTree = "<group>"; };
+		DFFA34AC25ADB65000ED1590 /* IPError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IPError.swift; sourceTree = "<group>"; };
+		DFFA34AD25ADB65000ED1590 /* IPTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IPTextField.swift; sourceTree = "<group>"; };
+		DFFA34AE25ADB65000ED1590 /* IPTextField+Functions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IPTextField+Functions.swift"; sourceTree = "<group>"; };
+		DFFA34AF25ADB65000ED1590 /* IPTextField+UnderlinedTextFieldDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IPTextField+UnderlinedTextFieldDelegate.swift"; sourceTree = "<group>"; };
+		DFFA34B125ADB65000ED1590 /* IPTextField+ UITextFieldDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IPTextField+ UITextFieldDelegate.swift"; sourceTree = "<group>"; };
+		DFFA34BB25ADB65A00ED1590 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
+		DFFA34C825ADB79C00ED1590 /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DFFA34CC25ADB79C00ED1590 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DFFA34D525ADB7B600ED1590 /* IPAddressTextFieldinsertTextTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IPAddressTextFieldinsertTextTests.swift; sourceTree = "<group>"; };
+		DFFA34D625ADB7B600ED1590 /* IPAddresTextFieldClearTextTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IPAddresTextFieldClearTextTests.swift; sourceTree = "<group>"; };
+		DFFA34D725ADB7B600ED1590 /* IPAddressTextFieldCheckTextTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IPAddressTextFieldCheckTextTests.swift; sourceTree = "<group>"; };
+		DFFA34D825ADB7B600ED1590 /* IPAddressTextFieldGetTextTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IPAddressTextFieldGetTextTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DFFA348325ADB5E600ED1590 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DFFA34C525ADB79C00ED1590 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFFA34CD25ADB79C00ED1590 /* IPTextField.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DFFA347C25ADB5E500ED1590 = {
+			isa = PBXGroup;
+			children = (
+				DFFA348825ADB5E600ED1590 /* Sources */,
+				DFFA34C925ADB79C00ED1590 /* Tests */,
+				DFFA348725ADB5E600ED1590 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DFFA348725ADB5E600ED1590 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DFFA348625ADB5E600ED1590 /* IPTextField.framework */,
+				DFFA34C825ADB79C00ED1590 /* Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DFFA348825ADB5E600ED1590 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				DFFA34BA25ADB65A00ED1590 /* Resources */,
+				DFFA34AC25ADB65000ED1590 /* IPError.swift */,
+				DFFA34AD25ADB65000ED1590 /* IPTextField.swift */,
+				DFFA34B125ADB65000ED1590 /* IPTextField+ UITextFieldDelegate.swift */,
+				DFFA34AE25ADB65000ED1590 /* IPTextField+Functions.swift */,
+				DFFA34AF25ADB65000ED1590 /* IPTextField+UnderlinedTextFieldDelegate.swift */,
+				DFFA34A625ADB64400ED1590 /* UnderlinedTextField.swift */,
+				DFFA348A25ADB5E600ED1590 /* Info.plist */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		DFFA34BA25ADB65A00ED1590 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DFFA34BB25ADB65A00ED1590 /* Media.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		DFFA34C925ADB79C00ED1590 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				DFFA34D725ADB7B600ED1590 /* IPAddressTextFieldCheckTextTests.swift */,
+				DFFA34D825ADB7B600ED1590 /* IPAddressTextFieldGetTextTests.swift */,
+				DFFA34D525ADB7B600ED1590 /* IPAddressTextFieldinsertTextTests.swift */,
+				DFFA34D625ADB7B600ED1590 /* IPAddresTextFieldClearTextTests.swift */,
+				DFFA34CC25ADB79C00ED1590 /* Info.plist */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		DFFA348125ADB5E600ED1590 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		DFFA348525ADB5E600ED1590 /* IPTextField */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DFFA349A25ADB5E600ED1590 /* Build configuration list for PBXNativeTarget "IPTextField" */;
+			buildPhases = (
+				DFFA348125ADB5E600ED1590 /* Headers */,
+				DFFA348225ADB5E600ED1590 /* Sources */,
+				DFFA348325ADB5E600ED1590 /* Frameworks */,
+				DFFA348425ADB5E600ED1590 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IPTextField;
+			productName = IPTextField;
+			productReference = DFFA348625ADB5E600ED1590 /* IPTextField.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		DFFA34C725ADB79C00ED1590 /* Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DFFA34D025ADB79C00ED1590 /* Build configuration list for PBXNativeTarget "Tests" */;
+			buildPhases = (
+				DFFA34C425ADB79C00ED1590 /* Sources */,
+				DFFA34C525ADB79C00ED1590 /* Frameworks */,
+				DFFA34C625ADB79C00ED1590 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DFFA34CF25ADB79C00ED1590 /* PBXTargetDependency */,
+			);
+			name = Tests;
+			productName = Tests;
+			productReference = DFFA34C825ADB79C00ED1590 /* Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DFFA347D25ADB5E500ED1590 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1230;
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					DFFA348525ADB5E600ED1590 = {
+						CreatedOnToolsVersion = 12.3;
+						LastSwiftMigration = 1230;
+					};
+					DFFA34C725ADB79C00ED1590 = {
+						CreatedOnToolsVersion = 12.3;
+					};
+				};
+			};
+			buildConfigurationList = DFFA348025ADB5E500ED1590 /* Build configuration list for PBXProject "IPTextField" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DFFA347C25ADB5E500ED1590;
+			productRefGroup = DFFA348725ADB5E600ED1590 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DFFA348525ADB5E600ED1590 /* IPTextField */,
+				DFFA34C725ADB79C00ED1590 /* Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DFFA348425ADB5E600ED1590 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFFA34BC25ADB65A00ED1590 /* Media.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DFFA34C625ADB79C00ED1590 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DFFA348225ADB5E600ED1590 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFFA34B425ADB65000ED1590 /* IPTextField+Functions.swift in Sources */,
+				DFFA34B525ADB65000ED1590 /* IPTextField+UnderlinedTextFieldDelegate.swift in Sources */,
+				DFFA34B725ADB65000ED1590 /* IPTextField+ UITextFieldDelegate.swift in Sources */,
+				DFFA34B325ADB65000ED1590 /* IPTextField.swift in Sources */,
+				DFFA34A725ADB64400ED1590 /* UnderlinedTextField.swift in Sources */,
+				DFFA34B225ADB65000ED1590 /* IPError.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DFFA34C425ADB79C00ED1590 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFFA34DA25ADB7B600ED1590 /* IPAddresTextFieldClearTextTests.swift in Sources */,
+				DFFA34DC25ADB7B600ED1590 /* IPAddressTextFieldGetTextTests.swift in Sources */,
+				DFFA34D925ADB7B600ED1590 /* IPAddressTextFieldinsertTextTests.swift in Sources */,
+				DFFA34DB25ADB7B600ED1590 /* IPAddressTextFieldCheckTextTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DFFA34CF25ADB79C00ED1590 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			platformFilter = ios;
+			target = DFFA348525ADB5E600ED1590 /* IPTextField */;
+			targetProxy = DFFA34CE25ADB79C00ED1590 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		DFFA349825ADB5E600ED1590 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		DFFA349925ADB5E600ED1590 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		DFFA349B25ADB5E600ED1590 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 6JTTZ762YP;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Sources/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.marianasamardzic.IPTextField;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		DFFA349C25ADB5E600ED1590 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 6JTTZ762YP;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Sources/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.marianasamardzic.IPTextField;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		DFFA34D125ADB79C00ED1590 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6JTTZ762YP;
+				INFOPLIST_FILE = Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.marianasamardzic.Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DFFA34D225ADB79C00ED1590 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6JTTZ762YP;
+				INFOPLIST_FILE = Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.marianasamardzic.Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DFFA348025ADB5E500ED1590 /* Build configuration list for PBXProject "IPTextField" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DFFA349825ADB5E600ED1590 /* Debug */,
+				DFFA349925ADB5E600ED1590 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DFFA349A25ADB5E600ED1590 /* Build configuration list for PBXNativeTarget "IPTextField" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DFFA349B25ADB5E600ED1590 /* Debug */,
+				DFFA349C25ADB5E600ED1590 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DFFA34D025ADB79C00ED1590 /* Build configuration list for PBXNativeTarget "Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DFFA34D125ADB79C00ED1590 /* Debug */,
+				DFFA34D225ADB79C00ED1590 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DFFA347D25ADB5E500ED1590 /* Project object */;
+}

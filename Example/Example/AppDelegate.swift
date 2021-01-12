@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  IPTextFieldExamples
+//  Example
 //
-//  Created by Mariana Samardzic on 24/11/2020.
+//  Created by Mariana Samardzic on 12.1.21..
 //
 
 import UIKit
@@ -10,11 +10,11 @@ import UIKit
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-    var window: UIWindow?
+var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        // Override point for customization after application launch.
         return true
     }
-
 }
 

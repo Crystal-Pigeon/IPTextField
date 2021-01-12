@@ -1,3 +1,4 @@
+
 Pod::Spec.new do |s|
   s.name             = 'IPTextField'
   s.version          = '1.0.0'
@@ -15,10 +16,10 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '9.0'
 s.swift_version = '4.2'
 
-  s.source_files = 'IPTextField/Classes/**/*'
+  s.source_files = 'Sources/*.swift'
   
    s.resource_bundles = {
-     'IPTextField' => ['IPTextField/Assets/**/*']
+     'IPTextField' => ['Sources/Resources/*.xcassets']
    }
 
 end

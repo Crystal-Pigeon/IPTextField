@@ -9,13 +9,6 @@ IPTextField is a custom UIView subclass that enables users to easily enter ip ad
 * a keyboard toolbar that makes it easy to switch between fields
 
 
-# Instalation
-### CocoaPods
-Add this line to your Podfile
-```swift
-pod 'IPTextField'
-```
-
 # Using the IPTextField
 ### Through code
 ```swift
