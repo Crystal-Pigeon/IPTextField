@@ -72,14 +72,7 @@ class UnderlinedTextField: UITextField {
     func setupToolbarButton(imageName: String, selector: Selector) -> UIBarButtonItem {
         let button = UIButton(type: .custom)
         button.frame = CGRect(x: 0.0, y: 0.0, width: 20, height: 20)
-        
-        // works with CocoaPods
-        let bundle = Bundle(for: UnderlinedTextField.self)
-        let bundleUrl = bundle.resourceURL!.appendingPathComponent("IPTextField.bundle")
-        let resourceBundle = Bundle(url: bundleUrl)
-        let image = UIImage(named: imageName, in: resourceBundle, compatibleWith: nil)
-        
-        button.setImage(image, for: .normal)
+        button.setImage(getImageFromBunde(imageName: imageName), for: .normal)
         button.addTarget(self, action: selector, for: .touchUpInside)
         let barButtonItem: UIBarButtonItem = UIBarButtonItem(customView: button)
         
@@ -89,6 +82,28 @@ class UnderlinedTextField: UITextField {
         height?.isActive = true
         
         return barButtonItem
+    }
+    
+    func getImageFromBunde(imageName: String) -> UIImage? {
+        
+        // works with CocoaPods
+        let bundle = Bundle(for: UnderlinedTextField.self)
+        var bundleUrl = bundle.resourceURL!.appendingPathComponent("IPTextField.bundle")
+        var resourceBundle = Bundle(url: bundleUrl)
+        var image = UIImage(named: imageName, in: resourceBundle, compatibleWith: nil)
+        
+        //works with framework
+        if image == nil {
+            image = UIImage(named: imageName, in: bundle, compatibleWith: nil)
+        }
+        
+        //works with package
+        if image == nil {
+            bundleUrl = bundle.resourceURL!.appendingPathComponent("IPTextField_IPTextField.bundle")
+            resourceBundle = Bundle(url: bundleUrl)
+            image = UIImage(named: imageName, in: resourceBundle, compatibleWith: nil)
+        }
+        return image
     }
     
     // MARK: - Toolbar Actions
