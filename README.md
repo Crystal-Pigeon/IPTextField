@@ -8,6 +8,16 @@ IPTextField is a custom UIView subclass that enables users to easily enter ip ad
 * that when one field is filled the next field will automatically be activated
 * a keyboard toolbar that makes it easy to switch between fields
 
+# Installation
+### CocoaPods
+in the Podfile insert
+```swift
+pod 'IPTextField'
+```
+
+### Swift Package Manager
+Click on your project in the project navigator and add this library as a swift package. Make sure that the minimum version is set to 2.0.0
+![Alt Text](https://github.com/Crystal-Pigeon/IPTextField/blob/main/images/swift-package.png)
 
 # Using the IPTextField
 ### Through code
